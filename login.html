@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173c35">
+  <title>Sign in | Campus Desk</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="login">
+  <main class="auth-page">
+    <section class="auth-aside" aria-label="Campus Desk">
+      <a class="brand" href="login.html"><span class="brand-mark">C</span><span>Campus Desk</span></a>
+      <div class="aside-copy"><div class="aside-line"></div><h1>Every student, in view.</h1><p>A simpler way to keep enrollment details organized and your campus records close at hand.</p></div>
+      <div class="aside-footer">A little more order for every school day.</div>
+    </section>
+    <section class="auth-main">
+      <div class="auth-card">
+        <p class="eyebrow">Welcome back</p>
+        <h2>Sign in to your account</h2>
+        <p class="auth-intro">Enter your details to open your student directory.</p>
+        <form class="auth-form" data-auth-form>
+          <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@school.edu"></div>
+          <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" required autocomplete="current-password" placeholder="Enter your password"></div>
+          <p class="alert" data-alert role="alert"></p>
+          <button class="primary-btn" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="auth-switch">New to Campus Desk? <a href="register.html">Create an account</a></p>
+        <div class="demo-hint"><strong>Demo account</strong><br>admin@campus.test · campus123<br><button type="button" class="logout" data-demo-login>Fill demo details</button></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

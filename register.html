@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173c35">
+  <title>Create account | Campus Desk</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="register">
+  <main class="auth-page">
+    <section class="auth-aside" aria-label="Campus Desk">
+      <a class="brand" href="login.html"><span class="brand-mark">C</span><span>Campus Desk</span></a>
+      <div class="aside-copy"><div class="aside-line"></div><h1>Make room for the work that matters.</h1><p>Start a tidy student directory for your school and keep the essentials together.</p></div>
+      <div class="aside-footer">A little more order for every school day.</div>
+    </section>
+    <section class="auth-main">
+      <div class="auth-card">
+        <p class="eyebrow">Get started</p>
+        <h2>Create your account</h2>
+        <p class="auth-intro">Set up your administrator profile to manage student records.</p>
+        <form class="auth-form" data-auth-form>
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" required maxlength="80" autocomplete="name" placeholder="Alex Morgan"></div>
+          <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@school.edu"></div>
+          <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters"></div>
+          <p class="alert" data-alert role="alert"></p>
+          <button class="primary-btn" type="submit">Create account <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="auth-switch">Already have an account? <a href="login.html">Sign in</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
