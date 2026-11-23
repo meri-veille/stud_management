@@ -1,12 +1,11 @@
-
 {
   "name": "campus-desk",
   "version": "1.0.0",
   "description": "Campus Desk Student Management DevOps Project",
   "scripts": {
     "test": "jest --runInBand",
-    "test:unit": "jest --runInBand tests/unit.test.js",
-    "test:integration": "jest --runInBand tests/integration.test.js"
+    "test:unit": "jest --runInBand test/unit.test.js",
+    "test:integration": "jest --runInBand test/integration.test.js"
   },
   "devDependencies": {
     "jest": "^30.0.0"
